@@ -1,0 +1,3 @@
+
+Create IBN-Net model resnet18_ibn_b.
+
