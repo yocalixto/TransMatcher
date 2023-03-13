@@ -7,3 +7,14 @@ Create IBN-Net model resnet18_ibn_b.
 
 Create IBN-Net model resnet18_ibn_b.
 
+
+Create IBN-Net model resnet18_ibn_b.
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset cuhk03_np_detected,market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset msmt -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+

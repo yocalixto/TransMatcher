@@ -1,0 +1,18 @@
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/cu116
+Collecting torch
+  Downloading https://download.pytorch.org/whl/cu116/torch-1.13.1%2Bcu116-cp310-cp310-win_amd64.whl (2433.8 MB)
+     ---------------------------------------- 2.4/2.4 GB 1.0 MB/s eta 0:00:00
+Requirement already satisfied: torchvision in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (0.14.1)
+Collecting torchaudio
+  Downloading https://download.pytorch.org/whl/cu116/torchaudio-0.13.1%2Bcu116-cp310-cp310-win_amd64.whl (2.3 MB)
+     ---------------------------------------- 2.3/2.3 MB 1.7 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from torch) (4.5.0)
+Requirement already satisfied: requests in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from torchvision) (2.28.2)
+Requirement already satisfied: numpy in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from torchvision) (1.24.2)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from torchvision) (9.4.0)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from requests->torchvision) (3.4)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from requests->torchvision) (3.1.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from requests->torchvision) (1.26.15)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\calisto\appdata\local\programs\python\python310\lib\site-packages (from requests->torchvision) (2022.12.7)
+Installing collected packages: torch, torchaudio
+Successfully installed torch-1.13.1+cu116 torchaudio-0.13.1+cu116

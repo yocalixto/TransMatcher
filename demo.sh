@@ -1,7 +1,7 @@
 data_dir=./Data/
 exp_dir=./Exp/
 
-dataset=msmt
+dataset=market
 testset=cuhk03_np_detected,market
 method=TransMatcher
 sub_method=Demo
