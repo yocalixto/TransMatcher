@@ -1,0 +1,6 @@
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.9068867579281092, "acc": 0.36617842876165113, "epochs": 1, "train_time": 89.91706895828247}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.9671866715192476, "acc": 0.39214380825565914, "epochs": 1, "train_time": 84.23944163322449}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.392556896857352, "acc": 0.4632157123834887, "epochs": 10, "train_time": 832.3435437679291}

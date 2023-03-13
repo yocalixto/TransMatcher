@@ -64,3 +64,163 @@ Market dataset loaded
   query    |   750 |     3368
   gallery  |   751 |    15913
 	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset cuhk03_np_detected,market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 11.438 seconds. Data time: 18.627 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.073 seconds.
+
+Total GS time: 35.078 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.907. Acc: 36.62%. Training time: 90 seconds.                  
+
+Evaluate the learned model:
+CUHK dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |     0 |        0
+  query    |     0 |        0
+  gallery  |     0 |        0
+Compute similarity ...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset cuhk03_np_detected,market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 7.422 seconds. Data time: 15.516 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.830 seconds.
+
+Total GS time: 27.444 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.967. Acc: 39.21%. Training time: 84 seconds.                  
+
+Evaluate the learned model:
+CUHK dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |     0 |        0
+  query    |     0 |        0
+  gallery  |     0 |        0
+Compute similarity ...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset cuhk03_np_detected,market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 10 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 7.387 seconds. Data time: 21.249 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.906 seconds.
+
+Total GS time: 33.295 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.976. Acc: 37.33%. Training time: 104 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.637 seconds. Data time: 20.013 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.946 seconds.
+
+Total GS time: 26.528 seconds.
+
+* Finished epoch 2 at lr=[0.0005, 0.005, 0.005]. Loss: 3.931. Acc: 35.59%. Training time: 195 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 2.260 seconds. Data time: 19.604 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.018 seconds.
+
+Total GS time: 26.828 seconds.
+
+* Finished epoch 3 at lr=[0.0005, 0.005, 0.005]. Loss: 3.959. Acc: 33.47%. Training time: 281 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.635 seconds. Data time: 19.565 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.945 seconds.
+
+Total GS time: 26.204 seconds.
+
+* Finished epoch 4 at lr=[0.0005, 0.005, 0.005]. Loss: 3.666. Acc: 41.66%. Training time: 378 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.641 seconds. Data time: 18.964 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.999 seconds.
+
+Total GS time: 25.687 seconds.
+
+* Finished epoch 5 at lr=[0.0005, 0.005, 0.005]. Loss: 3.595. Acc: 43.01%. Training time: 471 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.711 seconds. Data time: 14.760 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.937 seconds.
+
+Total GS time: 21.416 seconds.
+
+* Finished epoch 6 at lr=[0.0005, 0.005, 0.005]. Loss: 3.547. Acc: 43.03%. Training time: 550 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.765 seconds. Data time: 14.998 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.910 seconds.
+
+Total GS time: 20.362 seconds.
+
+* Finished epoch 7 at lr=[0.0005, 0.005, 0.005]. Loss: 3.614. Acc: 40.75%. Training time: 621 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.824 seconds. Data time: 14.820 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.942 seconds.
+
+Total GS time: 20.265 seconds.
+
+* Finished epoch 8 at lr=[0.0005, 0.005, 0.005]. Loss: 3.609. Acc: 40.45%. Training time: 690 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.763 seconds. Data time: 14.952 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.930 seconds.
+
+Total GS time: 20.320 seconds.
+
+* Finished epoch 9 at lr=[0.0005, 0.005, 0.005]. Loss: 3.361. Acc: 47.84%. Training time: 758 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 2.504 seconds. Data time: 18.587 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.922 seconds.
+
+Total GS time: 26.099 seconds.
+
+* Finished epoch 10 at lr=[0.0005, 0.005, 0.005]. Loss: 3.393. Acc: 46.32%. Training time: 832 seconds.                  
+
+Evaluate the learned model:
+CUHK dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |     0 |        0
+  query    |     0 |        0
+  gallery  |     0 |        0
+Compute similarity ...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	
