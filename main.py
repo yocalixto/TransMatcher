@@ -31,6 +31,8 @@ from reid.loss.pairwise_matching_loss import PairwiseMatchingLoss
 from transmatcher import TransMatcher
 import restranmap
 
+map_location=torch.device('cpu')
+
 def get_data(dataname, data_dir, model, matcher, save_path, args):
     root = osp.join(data_dir, dataname)
 
