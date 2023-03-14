@@ -224,3 +224,321 @@ Market dataset loaded
   query    |   750 |     3368
   gallery  |   751 |    15913
 	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 6.081 seconds. Data time: 13.098 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.085 seconds.
+
+Total GS time: 24.847 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.748. Acc: 44.92%. Training time: 64 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+Compute similarity ...	Time: 284.214 seconds.
+Mean AP: 1.8%
+CMC Scores
+  top-1           2.2%
+  top-5           5.7%
+  top-10          9.4%
+  top-20         14.6%
+  market: rank1=2.2, mAP=1.8.
+
+Finished training at epoch 1, loss = 3.748, acc = 44.92%.
+
+Total training time: 64.242 sec. Average training time per epoch: 64.242 sec.
+Total testing time: 296.916 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 10 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 8.009 seconds. Data time: 15.922 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.123 seconds.
+
+Total GS time: 29.659 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.465. Acc: 53.33%. Training time: 70 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.823 seconds. Data time: 15.788 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.810 seconds.
+
+Total GS time: 22.022 seconds.
+
+* Finished epoch 2 at lr=[0.0005, 0.005, 0.005]. Loss: 3.814. Acc: 38.81%. Training time: 129 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.821 seconds. Data time: 12.958 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.859 seconds.
+
+Total GS time: 19.226 seconds.
+
+* Finished epoch 3 at lr=[0.0005, 0.005, 0.005]. Loss: 2.200. Acc: 72.59%. Training time: 187 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.988 seconds. Data time: 12.896 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.997 seconds.
+
+Total GS time: 19.467 seconds.
+
+* Finished epoch 4 at lr=[0.0005, 0.005, 0.005]. Loss: 2.454. Acc: 69.92%. Training time: 243 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.993 seconds. Data time: 13.159 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.689 seconds.
+
+Total GS time: 19.465 seconds.
+
+* Finished epoch 5 at lr=[0.0005, 0.005, 0.005]. Loss: 2.434. Acc: 68.48%. Training time: 300 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.811 seconds. Data time: 13.332 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.636 seconds.
+
+Total GS time: 19.386 seconds.
+
+* Finished epoch 6 at lr=[0.0005, 0.005, 0.005]. Loss: 2.066. Acc: 70.82%. Training time: 357 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.993 seconds. Data time: 16.314 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.935 seconds.
+
+Total GS time: 22.857 seconds.
+
+* Finished epoch 7 at lr=[0.0005, 0.005, 0.005]. Loss: 0.706. Acc: 92.36%. Training time: 420 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.951 seconds. Data time: 16.148 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.011 seconds.
+
+Total GS time: 22.730 seconds.
+
+* Finished epoch 8 at lr=[0.0005, 0.005, 0.005]. Loss: 0.464. Acc: 95.34%. Training time: 481 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.917 seconds. Data time: 16.129 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.978 seconds.
+
+Total GS time: 22.637 seconds.
+
+* Finished epoch 9 at lr=[0.0005, 0.005, 0.005]. Loss: 1.682. Acc: 81.26%. Training time: 544 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.866 seconds. Data time: 16.404 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.974 seconds.
+
+Total GS time: 22.881 seconds.
+
+* Finished epoch 10 at lr=[0.0005, 0.005, 0.005]. Loss: 0.920. Acc: 88.17%. Training time: 605 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+Compute similarity ...	Time: 279.480 seconds.
+Mean AP: 0.9%
+CMC Scores
+  top-1           1.4%
+  top-5           4.6%
+  top-10          7.4%
+  top-20         11.4%
+  market: rank1=1.4, mAP=0.9.
+
+Finished training at epoch 10, loss = 0.920, acc = 88.17%.
+
+Total training time: 605.184 sec. Average training time per epoch: 60.518 sec.
+Total testing time: 291.309 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 10 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 20 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+	 GraphSampler: 	Extract Features...	Feature time: 6.719 seconds. Data time: 13.028 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.918 seconds.
+
+Total GS time: 25.231 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.829. Acc: 43.48%. Training time: 64 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.828 seconds. Data time: 16.077 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.158 seconds.
+
+Total GS time: 22.655 seconds.
+
+* Finished epoch 2 at lr=[0.0005, 0.005, 0.005]. Loss: 4.036. Acc: 32.52%. Training time: 125 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.852 seconds. Data time: 16.049 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.091 seconds.
+
+Total GS time: 22.579 seconds.
+
+* Finished epoch 3 at lr=[0.0005, 0.005, 0.005]. Loss: 3.682. Acc: 41.74%. Training time: 186 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.003 seconds. Data time: 15.902 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.049 seconds.
+
+Total GS time: 22.554 seconds.
+
+* Finished epoch 4 at lr=[0.0005, 0.005, 0.005]. Loss: 3.745. Acc: 38.17%. Training time: 247 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.922 seconds. Data time: 16.307 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.973 seconds.
+
+Total GS time: 22.833 seconds.
+
+* Finished epoch 5 at lr=[0.0005, 0.005, 0.005]. Loss: 3.498. Acc: 44.54%. Training time: 309 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.857 seconds. Data time: 16.272 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.889 seconds.
+
+Total GS time: 22.633 seconds.
+
+* Finished epoch 6 at lr=[0.0005, 0.005, 0.005]. Loss: 3.677. Acc: 39.75%. Training time: 369 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.916 seconds. Data time: 13.466 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.612 seconds.
+
+Total GS time: 19.604 seconds.
+
+* Finished epoch 7 at lr=[0.0005, 0.005, 0.005]. Loss: 3.476. Acc: 44.16%. Training time: 425 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.916 seconds. Data time: 13.386 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.572 seconds.
+
+Total GS time: 19.469 seconds.
+
+* Finished epoch 8 at lr=[0.0005, 0.005, 0.005]. Loss: 2.924. Acc: 54.98%. Training time: 482 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.812 seconds. Data time: 13.316 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.604 seconds.
+
+Total GS time: 19.315 seconds.
+
+* Finished epoch 9 at lr=[0.0005, 0.005, 0.005]. Loss: 3.205. Acc: 49.58%. Training time: 538 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.837 seconds. Data time: 13.540 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.631 seconds.
+
+Total GS time: 19.578 seconds.
+
+* Finished epoch 10 at lr=[0.0005, 0.005, 0.005]. Loss: 3.227. Acc: 48.78%. Training time: 594 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.915 seconds. Data time: 13.024 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.787 seconds.
+
+Total GS time: 19.297 seconds.
+
+* Finished epoch 11 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.126. Acc: 50.50%. Training time: 651 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.933 seconds. Data time: 15.904 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.153 seconds.
+
+Total GS time: 22.597 seconds.
+
+* Finished epoch 12 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.087. Acc: 51.30%. Training time: 712 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.929 seconds. Data time: 15.928 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.086 seconds.
+
+Total GS time: 22.543 seconds.
+
+* Finished epoch 13 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.239. Acc: 48.12%. Training time: 773 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.814 seconds. Data time: 15.861 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.166 seconds.
+
+Total GS time: 22.445 seconds.
+
+* Finished epoch 14 at lr=[5e-05, 0.0005, 0.0005]. Loss: 2.870. Acc: 55.46%. Training time: 834 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.780 seconds. Data time: 16.258 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.923 seconds.
+
+Total GS time: 22.582 seconds.
+
+* Finished epoch 15 at lr=[5e-05, 0.0005, 0.0005]. Loss: 2.879. Acc: 56.23%. Training time: 894 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.855 seconds. Data time: 16.156 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.010 seconds.
+
+Total GS time: 22.672 seconds.
+
+* Finished epoch 16 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.043. Acc: 51.51%. Training time: 955 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.926 seconds. Data time: 13.281 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.656 seconds.
+
+Total GS time: 19.453 seconds.
+
+* Finished epoch 17 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.184. Acc: 48.05%. Training time: 1011 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.940 seconds. Data time: 13.430 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.703 seconds.
+
+Total GS time: 19.683 seconds.
+
+* Finished epoch 18 at lr=[5e-05, 0.0005, 0.0005]. Loss: 2.970. Acc: 53.53%. Training time: 1067 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.844 seconds. Data time: 13.345 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.700 seconds.
+
+Total GS time: 19.496 seconds.
+
+* Finished epoch 19 at lr=[5e-05, 0.0005, 0.0005]. Loss: 2.975. Acc: 53.26%. Training time: 1124 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.918 seconds. Data time: 13.382 seconds.
+	 GraphSampler: 	Compute distance...	Time: 4.586 seconds.
+
+Total GS time: 19.476 seconds.
+
+* Finished epoch 20 at lr=[5e-05, 0.0005, 0.0005]. Loss: 3.104. Acc: 51.05%. Training time: 1180 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |   750 |     3368
+  gallery  |   751 |    15913
+Compute similarity ...	Time: 281.214 seconds.
+Mean AP: 31.3%
+CMC Scores
+  top-1          54.9%
+  top-5          76.0%
+  top-10         83.6%
+  top-20         88.9%
+  market: rank1=54.9, mAP=31.3.
+
+Finished training at epoch 20, loss = 3.104, acc = 51.05%.
+
+Total training time: 1180.366 sec. Average training time per epoch: 59.018 sec.
+Total testing time: 293.615 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 20 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
