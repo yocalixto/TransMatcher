@@ -1020,3 +1020,185 @@ Total testing time: 4.989 sec.
 
 main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
 
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 10.300 seconds. Data time: 15.014 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.124 seconds.
+
+Total GS time: 31.411 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 4.050. Acc: 35.69%. Training time: 81 seconds.                  
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 3 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 5.766 seconds. Data time: 16.366 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.222 seconds.
+
+Total GS time: 28.021 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.464. Acc: 50.62%. Training time: 83 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.899 seconds. Data time: 16.153 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.192 seconds.
+
+Total GS time: 22.952 seconds.
+
+* Finished epoch 2 at lr=[0.0005, 0.005, 0.005]. Loss: 2.728. Acc: 59.69%. Training time: 157 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.608 seconds. Data time: 26.841 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.386 seconds.
+
+Total GS time: 33.555 seconds.
+
+* Finished epoch 3 at lr=[0.0005, 0.005, 0.005]. Loss: 3.082. Acc: 54.39%. Training time: 251 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...	pepe
+Time: 8.405 seconds.
+Mean AP: 100.0%
+CMC Scores
+  top-1         100.0%
+  top-5         100.0%
+  top-10        100.0%
+  top-20        100.0%
+  market: rank1=100.0, mAP=100.0.
+
+Finished training at epoch 3, loss = 3.082, acc = 54.39%.
+
+Total training time: 250.959 sec. Average training time per epoch: 83.653 sec.
+Total testing time: 8.637 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 3 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 3 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 6.288 seconds. Data time: 14.950 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.203 seconds.
+
+Total GS time: 27.477 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.566. Acc: 44.76%. Training time: 103 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 0.886 seconds. Data time: 14.948 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.288 seconds.
+
+Total GS time: 21.857 seconds.
+
+* Finished epoch 2 at lr=[0.0005, 0.005, 0.005]. Loss: 3.490. Acc: 46.04%. Training time: 198 seconds.                  
+
+	 GraphSampler: 	Extract Features...	Feature time: 1.656 seconds. Data time: 14.878 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.157 seconds.
+
+Total GS time: 22.728 seconds.
+
+* Finished epoch 3 at lr=[0.0005, 0.005, 0.005]. Loss: 3.458. Acc: 43.69%. Training time: 273 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+tensor([[0.5290, 0.4921, 0.5117, 0.5010, 0.5333, 0.4806, 0.5149, 0.5438, 0.5482,
+         0.5093, 0.5168, 0.5369, 0.5584, 0.5455, 0.4920, 0.5176, 0.5734, 0.5185,
+         0.5544, 0.5601, 0.5658, 0.5417, 0.5330, 0.4903, 0.4411, 0.5382, 0.5311,
+         0.5451, 0.5377, 0.5592, 0.5389, 0.4537, 0.5254, 0.5249, 0.5221, 0.5511,
+         0.5507, 0.5810, 0.4872, 0.5187, 0.5164, 0.5326, 0.5106, 0.5560, 0.5316,
+         0.5419, 0.5450, 0.3659, 0.4788, 0.3338]])
+	
+Time: 6.026 seconds.
+Mean AP: 70.0%
+CMC Scores
+  top-1         100.0%
+  top-5         100.0%
+  top-10        100.0%
+  top-20        100.0%
+  market: rank1=100.0, mAP=70.0.
+
+Finished training at epoch 3, loss = 3.458, acc = 43.69%.
+
+Total training time: 272.718 sec. Average training time per epoch: 90.906 sec.
+Total testing time: 6.197 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 3 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	

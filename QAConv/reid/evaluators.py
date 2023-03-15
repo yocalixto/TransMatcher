@@ -196,6 +196,12 @@ class Evaluator(object):
             g0 = i * batch_size
             g1 = min(num_gal, (i + 1) * batch_size)
             dist[:, g0:g1] = pairwise_distance(matcher, prob_fea, gal_fea, batch_size, prob_batch_size)  # [p, g]
+            print('\t')
+            print(len(imgs))
+            print('\t')
+            print('\t')
+            print(dist[:, g0:g1])#Batches para comparar con galería
+            print('\t')
 
         print('Time: %.3f seconds.' % (time.time() - start))
         rank1, mAP = evaluate_all(dist, query=query, gallery=gallery)
