@@ -36,3 +36,12 @@
 {"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
 {"train_dataset": "market", "loss": 3.457861160827223, "acc": 0.4369174434087883, "epochs": 3, "train_time": 272.7181441783905}
 {"test_dataset": "market", "rank1": 1.0, "mAP": 0.7, "test_time": 6.195779800415039}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 4.18327972201628, "acc": 0.3132490013315579, "epochs": 1, "train_time": 69.5734293460846}
+{"test_dataset": "market", "rank1": 1.0, "mAP": 0.75, "test_time": 4.791301727294922}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.9021601492015723, "acc": 0.40229693741677763, "epochs": 1, "train_time": 65.35459589958191}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.8246937796533027, "acc": 0.42293608521970705, "epochs": 1, "train_time": 67.85900235176086}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.7590950117923922, "acc": 0.41145139813581894, "epochs": 1, "train_time": 82.1589469909668}

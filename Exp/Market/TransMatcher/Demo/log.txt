@@ -1202,3 +1202,155 @@ Market dataset loaded
   query    |     1 |        1
   gallery  |    12 |       50
 	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 8.993 seconds. Data time: 13.188 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.354 seconds.
+
+Total GS time: 26.138 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 4.183. Acc: 31.32%. Training time: 70 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+50
+	
+	
+tensor([[0.5201, 0.5379, 0.5757, 0.5315, 0.5196, 0.5555, 0.5583, 0.5939, 0.5234,
+         0.5426, 0.5741, 0.4328, 0.3636, 0.3164, 0.3419, 0.3775, 0.5163, 0.5157,
+         0.5171, 0.5325, 0.5767, 0.5729, 0.5960, 0.5739, 0.5909, 0.5847, 0.6227,
+         0.5619, 0.6041, 0.5547, 0.4942, 0.5785, 0.5328, 0.5501, 0.5442, 0.4352,
+         0.5525, 0.4668, 0.2942, 0.3591, 0.3782, 0.3871, 0.4138, 0.4221, 0.6047,
+         0.5286, 0.5391, 0.5243, 0.3263, 0.2390]])
+	
+Time: 4.655 seconds.
+Mean AP: 75.0%
+CMC Scores
+  top-1         100.0%
+  top-5         100.0%
+  top-10        100.0%
+  top-20        100.0%
+  market: rank1=100.0, mAP=75.0.
+
+Finished training at epoch 1, loss = 4.183, acc = 31.32%.
+
+Total training time: 69.573 sec. Average training time per epoch: 69.573 sec.
+Total testing time: 4.792 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 5.764 seconds. Data time: 12.959 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.297 seconds.
+
+Total GS time: 22.614 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.902. Acc: 40.23%. Training time: 65 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 5.556 seconds. Data time: 14.882 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.283 seconds.
+
+Total GS time: 24.365 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.825. Acc: 42.29%. Training time: 68 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 5.399 seconds. Data time: 14.849 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.419 seconds.
+
+Total GS time: 24.292 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.759. Acc: 41.15%. Training time: 82 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	

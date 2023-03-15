@@ -2,6 +2,7 @@ from __future__ import print_function, absolute_import
 import sys
 import time
 from collections import OrderedDict
+import matplotlib.pyplot as plt
 
 import torch
 import numpy as np
@@ -194,13 +195,10 @@ class Evaluator(object):
             print('Compute similarity %d / %d. \t' % (i + 1, len(gallery_loader)), end='\r', file=sys.stdout.console)
             gal_fea = extract_cnn_feature(self.model, imgs)
             g0 = i * batch_size
-            g1 = min(num_gal, (i + 1) * batch_size)
+            g1 = min(num_gal, (i + 1) * batch_size)#Batches para comparar con galería
             dist[:, g0:g1] = pairwise_distance(matcher, prob_fea, gal_fea, batch_size, prob_batch_size)  # [p, g]
             print('\t')
-            print(len(imgs))
-            print('\t')
-            print('\t')
-            print(dist[:, g0:g1])#Batches para comparar con galería
+            plt.imshow(np.squeeze(imgs[np.argmin(dist[:, g0:g1], axis = 1)], axis=0).permute(1,2,0))
             print('\t')
 
         print('Time: %.3f seconds.' % (time.time() - start))
