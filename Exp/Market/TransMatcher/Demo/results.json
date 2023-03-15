@@ -13,3 +13,18 @@
 {"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
 {"train_dataset": "market", "loss": 3.1039265824380156, "acc": 0.5104860186418109, "epochs": 20, "train_time": 1180.3657689094543}
 {"test_dataset": "market", "rank1": 0.5492874109263658, "mAP": 0.3133687271305874, "test_time": 293.61369800567627}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 1.7036046939846203, "acc": 0.7356857523302264, "epochs": 40, "train_time": 2243.3486552238464}
+{"test_dataset": "market", "rank1": 0.05492874109263658, "mAP": 0.03185803623575562, "test_time": 310.28075432777405}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.8334996532028747, "acc": 0.43258988015978694, "epochs": 1, "train_time": 62.33315944671631}
+{"test_dataset": "market", "rank1": 0.0, "mAP": 0.019975950177142272, "test_time": 32.696982860565186}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.598625393983686, "acc": 0.46854194407456723, "epochs": 1, "train_time": 63.19556522369385}
+{"test_dataset": "market", "rank1": 1.0, "mAP": 1.0, "test_time": 4.695217609405518}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.7971060333969433, "acc": 0.42276964047936083, "epochs": 1, "train_time": 63.24334239959717}
+{"test_dataset": "market", "rank1": 1.0, "mAP": 1.0, "test_time": 4.5233986377716064}
+{"train_dataset": "market", "exp_dir": "./Exp/", "method": "TransMatcher", "sub_method": "Demo"}
+{"train_dataset": "market", "loss": 3.5640767052392666, "acc": 0.47320239680426096, "epochs": 1, "train_time": 62.66814589500427}
+{"test_dataset": "market", "rank1": 1.0, "mAP": 0.6111111111111112, "test_time": 4.988160610198975}
