@@ -1354,3 +1354,89 @@ Market dataset loaded
   query    |     1 |        1
   gallery  |    12 |       50
 	 GraphSampler: 	Extract Features...	
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 9.189 seconds. Data time: 15.204 seconds.
+	 GraphSampler: 	Compute distance...	Time: 3.324 seconds.
+
+Total GS time: 28.403 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.776. Acc: 43.34%. Training time: 70 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+	
+Time: 5.442 seconds.
+Mean AP: 23.6%
+CMC Scores
+  top-1           0.0%
+  top-5         100.0%
+  top-10        100.0%
+  top-20        100.0%
+  market: rank1=0.0, mAP=23.6.
+
+Finished training at epoch 1, loss = 3.776, acc = 43.34%.
+
+Total training time: 70.443 sec. Average training time per epoch: 70.443 sec.
+Total testing time: 5.624 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	Feature time: 5.929 seconds. Data time: 14.768 seconds.
+	 GraphSampler: 	Compute distance...	Time: 5.097 seconds.
+
+Total GS time: 26.441 seconds.
+
+* Finished epoch 1 at lr=[0.0005, 0.005, 0.005]. Loss: 3.086. Acc: 57.36%. Training time: 68 seconds.                  
+
+Evaluate the learned model:
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+Compute similarity ...		
+Print image
+	
+Time: 5.423 seconds.
+Mean AP: 31.2%
+CMC Scores
+  top-1           0.0%
+  top-5         100.0%
+  top-10        100.0%
+  top-20        100.0%
+  market: rank1=0.0, mAP=31.2.
+
+Finished training at epoch 1, loss = 3.086, acc = 57.36%.
+
+Total training time: 68.265 sec. Average training time per epoch: 68.265 sec.
+Total testing time: 5.617 sec.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+

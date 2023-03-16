@@ -198,7 +198,9 @@ class Evaluator(object):
             g1 = min(num_gal, (i + 1) * batch_size)#Batches para comparar con galería
             dist[:, g0:g1] = pairwise_distance(matcher, prob_fea, gal_fea, batch_size, prob_batch_size)  # [p, g]
             print('\t')
+            print("Print image")
             plt.imshow(np.squeeze(imgs[np.argmin(dist[:, g0:g1], axis = 1)], axis=0).permute(1,2,0))
+            plt.show()
             print('\t')
 
         print('Time: %.3f seconds.' % (time.time() - start))
