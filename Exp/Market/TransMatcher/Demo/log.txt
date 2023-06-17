@@ -1440,3 +1440,15 @@ Total testing time: 5.617 sec.
 
 main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
 
+
+Create IBN-Net model resnet18_ibn_b.
+
+main.py --testset market --data-dir ./Data/ --exp-dir ./Exp/ --method TransMatcher --sub_method Demo --dataset market -a resnet18 -b 8 -j 1 --neck 64 --num_trans_layers 1 --dim_feedforward 128 --epochs 1 --test_gal_batch 32 --test_prob_batch 32 --gs_verbose 
+
+Market dataset loaded
+  subset   | # ids | # images
+  ---------------------------
+  train    |   751 |    12936
+  query    |     1 |        1
+  gallery  |    12 |       50
+	 GraphSampler: 	Extract Features...	
